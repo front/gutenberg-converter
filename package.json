@@ -1,0 +1,24 @@
+{
+  "name": "gutenberg-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node index.js",
+    "release": "ncc build ./index.js -o ./dist/ --minify --no-cache --no-source-map-register"
+  },
+  "bin": {
+    "gutenberg-converter": "./dist/index.js"
+  },
+  "dependencies": {
+    "@wordpress/block-library": "^7.13.0",
+    "@wordpress/blocks": "^11.15.0",
+    "minimist": "^1.2.6",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "window": "^4.2.7"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}
