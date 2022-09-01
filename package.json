@@ -1,6 +1,6 @@
 {
   "name": "gutenberg-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -10,15 +10,13 @@
   "bin": {
     "gutenberg-converter": "./dist/index.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "@wordpress/block-library": "^7.13.0",
     "@wordpress/blocks": "^11.15.0",
     "minimist": "^1.2.6",
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "window": "^4.2.7"
-  },
-  "devDependencies": {
+    "window": "^4.2.7",
     "@vercel/ncc": "^0.34.0"
   }
 }
