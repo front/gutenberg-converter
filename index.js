@@ -6,6 +6,8 @@ const { parse, parseToJSON } = require('./converter');
 const args = minimist(process.argv.slice(2));
 const html = args._[0];
 
+process.stdout.write('\033c');
+
 if (!html) {
   console.error('No HTML provided.');
   process.exit(1);
